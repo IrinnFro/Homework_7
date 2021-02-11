@@ -1,0 +1,136 @@
+/* подключаем шрифты */
+
+/* Стили обнуления */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+li {
+  /*убираем точки*/
+  list-style: none;
+}
+a, /* убираем у ссылок предустановки*/
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,/*убираем стили у заголовков*/
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+img {
+  /* Убираем фантомный отступ от картинки */
+  vertical-align: top;
+}
+body {
+  line-height: 1;
+  color: #000;
+}
+/*-----------------------------------------*/
+.block {
+  font-size: 30px;
+  padding: 20px;
+  background-color: yellow;
+  margin: 0px 0px 30px 0px;
+}
+
+.block__2 {
+  /* блок с повторением картинки по горизонтали*/
+  font-size: 30px;
+  padding: 20px;
+  height: 600px;
+  background-image: url("../img/hqdefault.jpg");
+  background-repeat: repeat-x;
+  background-color: rgb(87, 180, 211);
+  margin-bottom: 30px;
+}
+
+.block__3 {
+  /*блок с повторением паттерна по вертикали*/
+  font-size: 30px;
+  padding: 20px;
+  height: 600px;
+  background-image: url("../img/peysli-uzor-indiyskie-ogurcy.jpg");
+  background-repeat: repeat-y;
+  background-color: pink;
+  margin-bottom: 30px;
+}
+
+.block__4 {
+  font-size: 30px;
+  padding: 20px;
+  height: 200px;
+  background: linear-gradient(
+    to left,
+    rgba(19, 50, 176, 1),
+    rgba(200, 32, 147, 1)
+  );
+  margin-bottom: 30px;
+}
+
+.block__5 {
+  font-size: 30px;
+  padding: 20px;
+  height: 500px;
+  background-image: url("../img/cat.jpg");
+  background-size: 300px auto; /*изменили размер картинки-фона*/
+  background-repeat: no-repeat;
+  background-position: 50%; /*по центру в %, можно и словами, и в px*/
+  background-color: rgb(114, 92, 92);
+  background-attachment: fixed;
+  margin-bottom: 30px;
+}
+.block__6 {
+  font-size: 30px;
+  padding: 20px;
+  height: 500px;
+  background-image: url("../img/5bfc4de096e25.jpg");
+  background-size: cover;
+  margin-bottom: 30px;
+  background-attachment: scroll;
+}
+
+.spisok {
+  font-size: 40px;
+  font-weight: bold;
+  background: rebeccapurple;
+  margin-bottom: 30px;
+}
+
+.spisok li {
+  margin: 0px 0px 20px 0px;
+  background: url("../img/thumbs-up.png") -20px no-repeat;
+  min-height: 110px;
+  padding: 0px 0px 0px 100px;
+}
+
+.link {
+  font-size: 100px;
+  width: 600px;
+  display: block;
+  margin: 0 auto;
+  padding: 15px 10px;
+  text-align: center;
+  color: #000;
+  border-radius: 100px;
+  box-shadow: 0px 20px 0px 0px rgb(58, 114, 122);
+  background: #32a7a7;
+
+  margin-bottom: 30px;
+}
+.link span {
+  display: inline-block;
+  padding: 10px 50px;
+  background: url("../img/thumbs-up.png") 5% center no-repeat;
+}
